@@ -1,17 +1,19 @@
-// import { useRoutes } from 'react-router-dom';
+import PageLogin from '../pages/login/index';
+import PageHome from '../pages/home/index';
+import { RouteObject } from 'react-router';
 
-// import { Landing } from '@/features/misc';
-// import { useAuth } from '@/lib/auth';
 
+const routes: RouteObject[] = [
+  {
+    path: '',
+    element: <PageLogin />,
+    children: []
+  },
+  {
+    path: '/home',
+    element: <PageHome />,
+    children: []
+  }
+];
 
-export const AppRoutes = () => {
-  // const auth = useAuth();
-
-  // const commonRoutes = [{ path: '/', element: <Landing /> }];
-
-  // const routes = auth.user ? protectedRoutes : publicRoutes;
-
-  // const element = useRoutes([...routes, ...commonRoutes]);
-
-  return <><div>sdsd</div></>;
-};
+export default routes;

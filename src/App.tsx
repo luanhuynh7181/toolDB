@@ -1,12 +1,28 @@
-import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, useRoutes } from 'react-router-dom';
 
-function App() {
+import routes from './routes';
+import PageHome from './pages/home/index';
+
+const AppRouter = () => {
+  return useRoutes(routes);
+};
+
+const App = () => {
   return (
-    <div className="App">
-     
-    </div>
+    <Router>
+      <AppRouter />
+    </Router>
   );
-}
+};
+// function App() {
+//   const content = useRoutes(routes);
+//   return (
+//     <div className="App">
+//       {content}
+//     </div>
+//   );
+// }
 
 export default App;
+
