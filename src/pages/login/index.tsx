@@ -6,12 +6,12 @@ const PageLogin = () => {
     const location = useLocation();
 
     useEffect(() => {
-        console.log("conasdada", JSON.stringify(location))
+        console.log("location", JSON.stringify(location));
     })
     return (
 
         <div className="container">
-            <a href={Config.O365_URL + Config.CLIENT_HOST.url}>Sign in with O365</a>
+            <a href={Config.O365_URL + Config.CLIENT_HOST.url + "/loading"}>Sign in with O365</a>
         </div>
     )
 }
