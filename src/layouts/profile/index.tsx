@@ -3,7 +3,7 @@ const PageProfile = () => {
     return (
 
         <div className="container">
-            <h1>Profile</h1>
+            <h1>PageProfile</h1>
         </div>
     )
 }

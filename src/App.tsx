@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter as Router, useRoutes } from 'react-router-dom';
 
 import routes from './routes';
-import PageHome from './pages/home/index';
 
 const AppRouter = () => {
   return useRoutes(routes);
